@@ -1,0 +1,55 @@
+/* .about-container {
+    padding: 50px;
+    background-color: #f8f9fa; /* Light background for the about section */
+
+
+.about-title {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 50%;
+    /* Adjust as necessary */
+    margin-right: 20px;
+    /* Space between image and text */
+}
+
+.about-image img {
+    max-width: 100%;
+    /* Responsive image */
+    border-radius: 8px;
+    /* Rounded corners */
+}
+
+.about-description {
+    flex: 2;
+    /* Adjust as necessary */
+}
+
+.about-description h2 {
+    color: #555;
+    margin-top: 20px;
+}
+
+.about-description p,
+.about-description ul {
+    color: #666;
+    /* Slightly lighter color for text */
+}
+
+.about-description ul {
+    list-style-type: disc;
+    /* Bulleted list for services */
+    /* Indent for list items */
+}

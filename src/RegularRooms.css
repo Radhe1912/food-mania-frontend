@@ -1,0 +1,129 @@
+.room-container {
+    margin: 100px auto;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.room-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.room-image {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.room-image:hover {
+    transform: scale(1.05);
+}
+
+/* Section Styling */
+.room-section {
+    margin-top: 40px;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    font-size: 1.5rem;
+    color: #FFB800;
+    margin-right: 10px;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #444;
+    margin: 0;
+}
+
+/* .underline {
+    width: 100px;
+    height: 5px;
+    background-color: #007BFF;
+    margin-top: 5px;
+} */
+
+.highlight-list, .facilities-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.highlight-list li, .facilities-list li {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.highlight-list li span, .facilities-list li span {
+    color: #007BFF;
+    margin-right: 8px;
+}
+
+/* Location */
+.location-description, .booking-info {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.location-address {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Reviews Section */
+.reviews {
+    font-size: 1.3rem;
+    color: #555;
+    display: flex;
+    align-items: center;
+    margin-left: 45%;
+}
+
+.stars {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.star, .star-half {
+    font-size: 1.8rem;
+    color: #FFB800;
+    margin-right: 5px;
+}
+
+/* Contact Section */
+.contact-section {
+    margin-top: 50px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-link {
+    color: #007BFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}

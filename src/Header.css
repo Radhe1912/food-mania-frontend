@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0; /* Ensure there's no padding */
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scrolling issues */
+}
+
+.navbar-scroll {
+    transition: background-color 0.3s;
+}
+
+.bg-image {
+    width: 100vw; /* Ensure it takes full viewport width */
+    height: 100vh; /* Full height of the viewport */
+    background-size: cover;
+    background-position: center;
+}
+
+#intro {
+    position: relative;
+    width: 100%; /* Ensure the intro section takes full width */
+    height: 100vh; /* Full height of the viewport */
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Adjust overlay */
+}
+
+/* Navbar Styles */
+.navbar-brand {
+    letter-spacing: 3px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.navbar-scroll .navbar-brand,
+.navbar-scroll .nav-link, .nav-item,
+.navbar-scroll .fa-bars {
+    color: #fff;
+    text-decoration: none;
+}
+.logout-btn{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.navbar-scroll {
+    box-shadow: none;
+}
+
+.navbar-scrolled {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.navbar-scrolled .navbar-brand,
+.navbar-scrolled .nav-link,
+.navbar-scrolled .fa-bars {
+    color: #4f4f4f;
+}
+
+.navbar-scrolled {
+    background-color: #fff;
+}

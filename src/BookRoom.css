@@ -1,0 +1,151 @@
+/* Modal backdrop */
+.room-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Ensure it sits on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.85); /* Dark backdrop for focus */
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out; /* Smooth fade-in */
+}
+
+/* Modal shown state */
+.room-modal.show {
+    display: block; /* Show the modal */
+    opacity: 1;
+}
+
+/* Modal content */
+.room-modal-content {
+    background: linear-gradient(135deg, #ffffff, #f1f1f1); /* Subtle gradient background */
+    margin: 10% auto;
+    padding: 25px; /* Medium padding */
+    border: none;
+    width: 60%; /* Medium size */
+    max-width: 500px; /* Ensures the modal isn't too large */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+    color: #333;
+    transition: transform 0.3s ease-in-out; /* Smooth scale effect */
+}
+
+.room-modal.show .room-modal-content {
+    transform: scale(1.05); /* Pop-out effect */
+}
+
+/* Close button */
+.room-close {
+    color: #bbb;
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.room-close:hover,
+.room-close:focus {
+    color: #ff5e57; /* Coral red for close button on hover */
+    text-decoration: none;
+}
+
+/* Heading */
+.room-modal-content h2 {
+    color: #ff6b6b; /* Coral red heading */
+    font-size: 1.8em;
+    font-weight: 600;
+    margin: 0 0 15px;
+}
+
+/* Paragraph (body text) */
+.room-modal-content p {
+    color: #555; /* Soft dark gray for readability */
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Input fields */
+.room-modal-content input {
+    width: 100%; /* Full width input */
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.room-modal-content input:focus {
+    border-color: #ff6b6b; /* Coral red for focus */
+    outline: none;
+}
+
+/* Buttons */
+.room-modal-content button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Vivid green primary button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.room-modal-content button:hover {
+    background-color: #43a047; /* Darker green on hover */
+    transform: translateY(-2px); /* Lift button on hover */
+}
+
+.room-modal-content button.secondary {
+    background-color: #6c757d; /* Gray for secondary button */
+}
+
+.room-modal-content button.secondary:hover {
+    background-color: #565e64; /* Darker gray on hover */
+}
+
+/* Error message */
+.error {
+    color: #e74c3c; /* Bright red for errors */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+
+/* Small screens */
+@media (max-width: 768px) {
+    .room-modal-content {
+        width: 85%; /* Adjust width for tablet-size screens */
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .room-modal-content {
+        width: 95%; /* Max width for mobile screens */
+        padding: 15px; /* Smaller padding for smaller screens */
+    }
+
+    .room-close {
+        font-size: 20px; /* Adjust close button size */
+    }
+
+    .room-modal-content h2 {
+        font-size: 1.5em; /* Reduce heading size on smaller screens */
+    }
+
+    .room-modal-content p {
+        font-size: 1em; /* Slightly smaller text */
+    }
+
+    .room-modal-content button {
+        padding: 8px 16px; /* Smaller button padding for mobile */
+    }
+}

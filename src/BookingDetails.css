@@ -1,0 +1,86 @@
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.styled-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.styled-table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.styled-table tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+.styled-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tab {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tab th, .tab td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.tab th {
+    background-color: #f4f4f4;
+}
+
+.btn.custom-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #181255;
+    transform: scale(1.05);
+    transition: background-color 0.3s, transform 0.2s;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn.custom-btn:hover {
+    background-color: #233983;
+}
+
+.btn.custom-btn:active {
+    transform: scale(1);
+    /* No scaling when active */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow on click */
+}
