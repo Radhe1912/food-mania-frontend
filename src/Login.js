@@ -55,7 +55,7 @@ const Login = () => {
                         className="input-field"
                     />
                     <button type="submit" className="login-button" disabled={loading}>
-                        {loading ? 'Loading...' : 'Login'}
+                        {loading ? 'Logging In...' : 'Login'}
                     </button>
                     <p className="redirect-text">If you don't have an account, click the button below to sign up:</p>
                     <button type="button" onClick={handleRedirectToLogin} className="sign-in-button">Sign Up Here</button>
