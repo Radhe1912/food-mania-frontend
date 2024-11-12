@@ -79,7 +79,7 @@ const Cart = () => {
                 alert('Food cannot be delivered to distances over 50 kilometers.');
             } else {
                 const durationInMinutes = (osrmResponse.data.routes[0].duration / 60)+10;
-                setEstimatedTime(durationInMinutes.toFixed(2)); // Set the estimated time
+                setEstimatedTime(Math.floor(durationInMinutes)); // Set the estimated time
                 setIsInvoiceVisible(true); // Show the "Generate Invoice" button
             }
         } catch (error) {
