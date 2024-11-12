@@ -10,6 +10,7 @@ const SignIn = () => {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const [success, setSuccess] = useState(false);
+    const [loading, setLoading] = useState(false);
 
     const handleRedirectToLogin = () => {
         navigate('/Login');
@@ -17,6 +18,7 @@ const SignIn = () => {
 
     const handleSignup = async (e) => {
         e.preventDefault();
+        setLoading(true);
         try {
             const response = await axios.post('https://food-mania-backend-3yzs.onrender.com/api/SignIn', { name, email, pwd: password });
             if (response.data.status) {
@@ -62,7 +64,9 @@ const SignIn = () => {
                     required
                     className="input-field"
                 />
-                <button type="submit" className="signup-button">Sign Up</button>
+                <button type="submit" className="signup-button" disabled={loading}>
+                    {loading ? 'Signing Up...' : 'Sign Up'}
+                </button>
                 <p className="redirect-text">If you already have an account, click the button below to log in:</p>
                 <button type="button" onClick={handleRedirectToLogin} className="login-button">Login Here</button>
             </form>
