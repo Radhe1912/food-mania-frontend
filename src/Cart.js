@@ -225,6 +225,10 @@ const Cart = () => {
                             <h3>Total Cost: ${calculateTotalCost()}</h3>
                         </div>
 
+                        <div className="delivery-time">
+                            <p className=''>High-quality food delivery from Gandhinagar</p>
+                        </div>
+
                         <div className="cart-summary">
                             <button className="btn custom-btn" onClick={() => setShowOrderForm(true)}>
                                 Order Now
