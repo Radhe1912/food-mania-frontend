@@ -54,7 +54,7 @@ const Login = () => {
                     />
                     <button type="submit" className="login-button">Login</button>
                     <p className="redirect-text">If you don't have an account, click the button below to sign up:</p>
-                    <button type="button" onClick={handleRedirectToLogin} className="sign-in-button">Sign In Here</button>
+                    <button type="button" onClick={handleRedirectToLogin} className="sign-in-button">Sign Up Here</button>
                 </form>
                 {error && <p className="error-message">{error}</p>}
             </div>
