@@ -48,10 +48,10 @@ const Header = () => {
                                     <Link className='nav-link' to='/BookRoom'>Bookings</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/About">About</a>
+                                    <Link className='nav-link' to='/About'>About</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/Contact">Contact</a>
+                                    <Link className='nav-link' to='/Contact'>Contact</Link>
                                 </li>
                             </ul>
                             <button onClick={handleLogout} className='btn logout-btn'>Logout</button>
@@ -62,14 +62,14 @@ const Header = () => {
                                     </Link>
                                 </li>
                                 <li className="nav-item me-3 me-lg-0">
-                                    <a className="nav-link" href="#!">
+                                    <Link className="nav-link" href="/">
                                         <i className="fab fa-twitter"></i>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="nav-item me-3 me-lg-0">
-                                    <a className="nav-link" href="#!">
+                                    <Link className="nav-link" href="/">
                                         <i className="fab fa-instagram"></i>
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
