@@ -170,7 +170,7 @@ const Home = () => {
                                 <p className="card-text">
                                     Reserve a table at our elegant restaurant and indulge in a fine dining experience. Whether you're planning a romantic dinner, a family gathering, or a business lunch, our cozy ambiance and attentive service will make your meal unforgettable. Book your table today and enjoy a delightful dining experience.
                                 </p>
-                                <button className="btn custom-btn" onClick={() => handleRedirect('/BookTable')}>Reserve a Table</button>
+                                <button className="btn custom-btn"><Link className='nav-link' to='/BookTable'>Reserve a Table</Link></button>
                             </div>
                         </div>
                     </div>
@@ -186,7 +186,7 @@ const Home = () => {
                                 <p className="card-text">
                                     Satisfy your cravings by ordering from our delicious menu, featuring a wide variety of gourmet dishes crafted by our expert chefs. Whether you're in the mood for a quick snack or a full-course meal, we deliver fresh food right to your door. Place your order now and enjoy a taste of luxury in every bite.
                                 </p>
-                                <button className="btn custom-btn" onClick={() => handleRedirect('/orderFood')}>Order Now</button>
+                                <button className="btn custom-btn"><Link className='nav-link' to='/orderFood'>Order Now</Link></button>
                             </div>
                         </div>
                     </div>
