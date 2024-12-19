@@ -36,12 +36,11 @@ const Header = () => {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav me-auto">
                                 <li className="nav-item">
-                                    // <a className="nav-link" href="/">Home</a>
-                                    <Link to='/'>Home</Link>
+                                    <Link className='nav-link' to='/'>Home</Link>
                                 </li>
                                 <li className="nav-item">
                                     // <a className="nav-link" href="/orderFood">Order Food</a>
-                                    <Link to='/orderFood'>Order Food</Link>
+                                    <Link className='nav-link' to='/orderFood'>Order Food</Link>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="/BookTable">Book Table</a>
