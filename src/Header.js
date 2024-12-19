@@ -39,14 +39,13 @@ const Header = () => {
                                     <Link className='nav-link' to='/'>Home</Link>
                                 </li>
                                 <li className="nav-item">
-                                    // <a className="nav-link" href="/orderFood">Order Food</a>
                                     <Link className='nav-link' to='/orderFood'>Order Food</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/BookTable">Book Table</a>
+                                    <Link className='nav-link' to='/BookTable'>Book Table</Link>
                                 </li>
                                 <li className="nav-item">
-                                <a className="nav-link" href="/BookRoom">Bookings</a>
+                                    <Link className='nav-link' to='/BookRoom'>Bookings</Link>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="/About">About</a>
