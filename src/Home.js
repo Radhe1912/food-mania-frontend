@@ -154,7 +154,7 @@ const Home = () => {
                                 <p className="card-text">
                                     Experience ultimate comfort and luxury in our well-appointed rooms, designed to make your stay memorable. Each room features modern amenities, including free Wi-Fi, air conditioning, and a spacious bed, ensuring relaxation after a long day of exploring the city or attending business meetings.
                                 </p>
-                                <button className="btn custom-btn" onClick={() => handleRedirect('/BookRoom')}>Explore Rooms</button>
+                                <button className="btn custom-btn"><Link className='nav-link' to='/BookRoom'>Explore Rooms</Link></button>
                             </div>
                         </div>
                     </div>
