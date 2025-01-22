@@ -13,7 +13,7 @@ const Cart = () => {
     const [estimatedTime, setEstimatedTime] = useState(null);
     const [isInvoiceVisible, setIsInvoiceVisible] = useState(false);
     const { userEmail } = useParams();
-    const hotelCoordinates = { lat: 23.23486274132175, lon: 72.65336560000003 }; // Replace with your hotel's actual coordinates
+    const hotelCoordinates = { lat: 23.21667000 , lon: 72.68333000 }; // Replace with your hotel's actual coordinates
 
     useEffect(() => {
         axios.get(`https://food-mania-backend-3yzs.onrender.com/api/cart?email=${userEmail}`)
