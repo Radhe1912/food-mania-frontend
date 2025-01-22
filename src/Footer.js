@@ -7,7 +7,7 @@ const Footer = () => {
                     <div className="p-4">
                         <div className="row mt-4">
                             <div className="col-lg-4 col-md-12 mb-4 mb-md-0">
-                                <h5 className="text-uppercase mb-4" style={{textAlign:"center"}}>About company</h5>
+                                <h5 className="text-uppercase mb-4" style={{textAlign:"center"}}>About FoodMania</h5>
 
                                 <p>
                                     At Food Mania, we believe in providing our guests with an unparalleled experience that combines luxury, comfort, and delicious culinary delights. Nestled in the heart of the city. 
