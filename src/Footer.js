@@ -28,7 +28,7 @@ const Footer = () => {
 
                                 <ul className="fa-ul" style={{marginLeft: "1.65em;"}}>
                                     <li className="mb-3">
-                                        <span className="fa-li"><i style={{display:"flex", marginLeft:"100%"}} className="fas fa-home"></i></span><span className="ms-2">Warsaw, 00-967, Poland</span>
+                                        <span className="fa-li"><i style={{display:"flex", marginLeft:"100%"}} className="fas fa-home"></i></span><span className="ms-2">Ahmedabad, India</span>
                                     </li>
                                     <li className="mb-3">
                                         <span className="fa-li"><i style={{display:"flex", marginLeft:"100%"}} className="fas fa-envelope"></i></span><span className="ms-2"><a href="mailto:info@foodmania.com" className="ms-2 text-white" style={{textDecoration:"none"}}>info@foodmania.com</a></span>
